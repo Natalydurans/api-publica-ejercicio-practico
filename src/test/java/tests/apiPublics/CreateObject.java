@@ -19,10 +19,6 @@ public class CreateObject {
     ExtentTest test;
     ExtentSparkReporter spark = new ExtentSparkReporter(path);
 
-
-
-
-
     @Test
     public void createObject() {
         extent.attachReporter(spark);
