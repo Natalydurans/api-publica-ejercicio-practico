@@ -13,8 +13,6 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 
-
-
 import static io.restassured.RestAssured.given;
 
 public class CreateObject {
