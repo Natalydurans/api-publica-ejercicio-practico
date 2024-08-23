@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite de pruebas" thread-count="2" parallel="tests">
+
+    <test name="Test Get Objects with id 5 and statusCode 200">
+        <parameter name="id" value="/2"></parameter>
+        <parameter name="expectedStatusCode" value="200"></parameter>
+        <classes>
+            <class name="tests.apiPublics.GetSingleObject"> </class>
+        </classes>
+    </test>
+
+    <test name="Test Get Objects with id 50 and statusCode 404">
+        <parameter name="id" value="/50"></parameter>
+        <parameter name="expectedStatusCode" value="404"></parameter>
+        <classes>
+            <class name="tests.apiPublics.GetSingleObject"> </class>
+        </classes>
+    </test>
+
+   <!-- <test name="Test CreateObject">
+        <classes>
+            <class name="tests.apiPublics.CreateObject"> </class>
+        </classes>
+    </test>
+
+    <test name="Test GetObjects">
+        <classes>
+            <class name="tests.apiPublics.GetObjects"> </class>
+        </classes>
+    </test>
+
+
+    <test name="Test UpdateObject">
+        <classes>
+            <class name="tests.apiPublics.UpdateObject"> </class>
+        </classes>
+    </test>
+
+    <test name="Test UpdatePartiallyObject">
+        <classes>
+            <class name="tests.apiPublics.UpdatePartiallyObject"> </class>
+        </classes>
+    </test>
+
+    <test name="Test DeleteObject">
+        <classes>
+            <class name="tests.apiPublics.DeleteObject"> </class>
+        </classes>
+    </test>-->
+
+</suite>
