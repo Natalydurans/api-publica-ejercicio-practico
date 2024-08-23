@@ -10,9 +10,7 @@ import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-
 import java.io.File;
-
 import static io.restassured.RestAssured.given;
 
 public class CreateObject {
@@ -20,6 +18,10 @@ public class CreateObject {
     ExtentReports extent = new ExtentReports();
     ExtentTest test;
     ExtentSparkReporter spark = new ExtentSparkReporter(path);
+
+
+
+
 
     @Test
     public void createObject() {
